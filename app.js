@@ -42,18 +42,27 @@
 // for (let i = 0; i <= interger; i++){
 //     if()
 // }
-
-
-
-
-
-function spaces (s, yesterday, today){
-    let total = 0;
-    for(let i =0; i <= s; i++){
-        if(yesterday[i] === "C" && today[i] === "C"){
-            total++;
-        }
+// let s = prompt()
+// function spaces (s, yesterday, today){
+//     let total = 0;
+//     for(let i =0; i <= s; i++){
+//         if(yesterday[i] === "C" && today[i] === "C"){
+//             total++;
+//         }
+//     }
+//     console.log(total);
+// }
+// spaces(5, "CC..C", ".CC..");
+let amount = Number(prompt("How many times would you like to run the Fibonacci Sequence?"));
+function fibonacci(amount){
+    let startnum = 0;
+    let secondnum = 1;
+    for (let i = 2; i <= amount; i++){
+        const total = startnum + secondnum;
+        startnum = secondnum;
+        secondnum = total;
+        return total;
     }
-    console.log(total);
+    console.log(fibonacci);
 }
-spaces(5, "CC..C", ".CC..");
+
