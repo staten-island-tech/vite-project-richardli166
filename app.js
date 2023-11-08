@@ -52,17 +52,17 @@
 //     }
 //     console.log(total);
 // }
-// spaces(5, "CC..C", ".CC..");
-let amount = Number(prompt("How many times would you like to run the Fibonacci Sequence?"));
-function fibonacci(amount){
-    let startnum = 0;
-    let secondnum = 1;
-    for (let i = 2; i <= amount; i++){
-        const total = startnum + secondnum;
-        startnum = secondnum;
-        secondnum = total;
-        return total;
-    }
-    console.log(fibonacci);
-}
+// // spaces(5, "CC..C", ".CC..");
+// let amount = Number(prompt("How many times would you like to run the Fibonacci Sequence?"));
+// function fibonacci(amount){
+//     let startnum = 0;
+//     let secondnum = 1;
+//     for (let i = 2; i <= amount; i++){
+//         const total = startnum + secondnum;
+//         startnum = secondnum;
+//         secondnum = total;
+//         return total;
+//     }
+//     console.log(fibonacci);
+// }
 
