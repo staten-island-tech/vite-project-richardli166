@@ -114,10 +114,10 @@ button:focus-visible {
 .light{
   --primary: var(var(--dark-blue));
 }
-
+/* 
 body{
   background-color: var(--primary);
-}
+} */
 
 h1{
   font-size: var(--h1);
@@ -125,4 +125,85 @@ h1{
 
 .section-title{
   font-size: var(--h1);
+}
+
+body {
+  font-size: 20px;
+  box-sizing: border-box;
+  background-color: rgb(45, 146, 254);
+  font-family: 'Inclusive Sans', sans-serif;
+  font-family: 'PT Serif', serif;
+}
+
+#title {
+  font-size: 1.5rem;
+  background-color: #88fbff;
+  width: 20%;
+  margin: auto;
+  padding: 15px;
+  align-items: center;
+  text-align: center;
+  border-radius: 50px;
+
+}
+
+.inserts {
+  width: 20%;
+  height: 550px;
+  background-color: #88fbff;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 50px;
+  box-shadow: 10px 10px;
+  padding: 30px;
+  display: flex;
+}
+
+.opener-image {
+  width: 90%;
+  height: 65%;
+  margin: auto;
+}
+
+#submit {
+  margin-top: 5px;
+  background-color: rgb(25, 103, 210);
+}
+
+.kenismean {
+  background-color: red;
+}
+
+#carddisplay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+div {
+  text-align: center;
+  margin: auto;
+  align-items: center;
+
+}
+
+@media screen and (max-width: 1200px) {
+  .inserts {
+      width: 40%;
+  }
+
+  #title {
+      font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .inserts {
+      width: 100%;
+  }
+
+  #title {
+      font-size: 1rem;
+  }
 }

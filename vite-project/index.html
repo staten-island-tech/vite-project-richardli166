@@ -6,14 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
-  <body>
-    <div id="app"></div>
+<body>
 
-    <h1 id="title">Gallery</h1>
+    <h1 id="title">Menu</h1>
 
-    <div class="options">
+    <div class="inputField">
 
         <form action="" id="form">
+            <label for="name">Name</label><br>
+            <input type="text" name="openerName" class="opener-name"><br>
+
+            <label for="Discoveredby">Discover By</label><br>
+            <input type="text" name="discoveredBy" class="discoverer"><br>
+
+            <label for="Bag">Setup For The First Bag</label><br>
+            <input type="text" name="firstbag" class="bag"><br>
+
             <input type="submit" value="Click to submit" id="submit">
 
         </form>
@@ -23,7 +31,11 @@
     <div id="carddisplay">
     </div>
 
+    <script src="app.js"></script>
 
-    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>
