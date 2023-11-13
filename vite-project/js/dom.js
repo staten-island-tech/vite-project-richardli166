@@ -1,18 +1,15 @@
 const DOMSelectors = {
     form: document.querySelector("#form"),
-    openerName: document.querySelector(".opener-name"),
-    discoveredBy: document.querySelector(".discoverer"),
-    bag: document.querySelector(".bag"),
+    openerName: document.querySelector(".name"),
+    discoveredBy: document.querySelector(".price"),
     Card: document.querySelector("#carddisplay"),
 }
 
 function input(){
     DOMSelectors.Card.insertAdjacentHTML("beforeend",
     `<div class="inserts">
-        <img src=${DOMSelectors.bag.value} alt="Image" class="opener-image">
         <h1 class="namecard">${DOMSelectors.openerName.value}</h1>
-        <h2>${DOMSelectors.discoveredBy.value}</h2>
-        <button class="kenismean">CLEAR</button>
+        <h2>${DOMSelectors.price.value}</h2>
     </div>`
 );
 }
@@ -28,4 +25,3 @@ DOMSelectors.form.addEventListener("submit", function (event){
     input();
     clearfield();
     });
- 

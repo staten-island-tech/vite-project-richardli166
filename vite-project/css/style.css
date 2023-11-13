@@ -159,21 +159,6 @@ body {
   display: flex;
 }
 
-.opener-image {
-  width: 90%;
-  height: 65%;
-  margin: auto;
-}
-
-#submit {
-  margin-top: 5px;
-  background-color: rgb(25, 103, 210);
-}
-
-.kenismean {
-  background-color: red;
-}
-
 #carddisplay {
   display: flex;
   flex-direction: row;
