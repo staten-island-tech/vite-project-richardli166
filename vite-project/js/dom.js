@@ -8,15 +8,15 @@ const DOMSelectors = {
 function input(){
     DOMSelectors.Card.insertAdjacentHTML("beforeend",
     `<div class="inserts">
-        <h1 class="namecard">${DOMSelectors.openerName.value}</h1>
+        <h1 class="namecard">${DOMSelectors.name.value}</h1>
         <h2>${DOMSelectors.price.value}</h2>
     </div>`
 );
 }
 
 function clearfield(){
-    DOMSelectors.openerName.value = "";
-    DOMSelectors.discoveredBy.value = "";
+    DOMSelectors.name.value = "";
+    DOMSelectors.price.value = "";
     DOMSelectors.bag.value = "";
 }
 
@@ -24,4 +24,4 @@ DOMSelectors.form.addEventListener("submit", function (event){
     event.preventDefault();
     input();
     clearfield();
-    });
+    }); 
