@@ -5,7 +5,7 @@ const DOMSelectors = {
     Card: document.querySelector("#carddisplay"),
 }
 
-function input(){
+function buttons(){
     DOMSelectors.Card.insertAdjacentHTML("beforeend",
     `<div class="inserts">
         <h1 class="namecard">${DOMSelectors.name.value}</h1>

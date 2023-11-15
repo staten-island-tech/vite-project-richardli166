@@ -73,7 +73,7 @@ const chinesefoodmenu = [
     name: "Mapo Eggplant",
     price: "$9.99",
     pieces: "1 serving",
-    type: "Eggplant",
+    type: "Veggie",
     imageSrc: "../Mapo-Eggplant.jpg"
   },
   {
@@ -94,7 +94,7 @@ const chinesefoodmenu = [
     name: "Steamed Sea Bass",
     price: "$15.99",
     pieces: "1 serving",
-    type: "Fish",
+    type: "Seafood",
     imageSrc: "../Steam-Sea-Bass.jpg"
   },
   {
