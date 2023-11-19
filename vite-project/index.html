@@ -1,33 +1,46 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Chinese Food Menu</title>
+
   </head>
-<body>
 
-    <h1 id="title">Menu</h1>
+  <body class="light">
+    <div class="mode" id="light">
+      <div class="top">
+        <div class="page-title">
+          <h1>Chinese Food Menu</h1>
+        </div>
+        <div class="foodButtons">
+          <input type="button" value="All" id="all-button"><br>
+          <input type="button" value="Appetizer" id="appetizer-button">
+          <input type="button" value="Chicken" id="chicken-button">
+          <input type="button" value="Beef" id="beef-button">
+          <input type="button" value="Pork" id="pork-button">
+          <input type="button" value="Duck" id="duck-button">
+          <input type="button" value="Seafood" id="seafood-button">
+          <input type="button" value="Noodles" id="noodles-button">
+          <input type="button" value="Vegetarian" id="vegetarian-button">
+          <input type="button" value="Rice" id="rice-button">
+          <input type="button" value="Soup" id="soup-button">
 
-    <div class="inputField">
-
-        <form action="" id="form">
-            <label for="name">Name</label><br>
-            <input type="text" name="name" class="name"><br>
-
-            <label for="price">Cost</label><br>
-            <input type="text" name="price" class="price"><br>
-
-        </form>
-
+        </div>
+        <div class="mode-buttons">
+          <input type="button" value="Mode" id="mode-button">
+        </div>
+      </div>
+      <div class="allCards">
+      </div>
     </div>
-
-    <div id="carddisplay">
-    </div>
-
-</body>
-</html>
     <script type="module" src="js/main.js"></script>
   </body>
+
+    <script type="module" src="js/main.js"></script>
+
+  </body>
+
 </html>

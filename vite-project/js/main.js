@@ -1,7 +1,75 @@
 import "../css/style.css";
-import {menu, name} from "./menu";
+import {DOMSelectors} from './dom';
+import {insertAll, insertAppetizer, insertChicken, insertBeef, insertPork, insertDuck, insertSeafood, insertNoodles, insertVegetarian, insertRice, insertSoup, removeEverything} from "./inserts";
 
-console.log(menu, name);
+DOMSelectors.all.addEventListener("click", function () {
+    removeEverything();
+    insertAll();
+  });
+  
+DOMSelectors.Appetizer.addEventListener("click", function () {
+    removeEverything();
+    insertAppetizer();
+  });
+  
+DOMSelectors.Chicken.addEventListener("click", function () {
+    removeEverything();
+    insertChicken();
+  });
+  
+DOMSelectors.Beef.addEventListener("click", function () {
+    removeEverything();
+    insertBeef();
+});
+  
+DOMSelectors.Pork.addEventListener("click", function () {
+    removeEverything();
+    insertPork();
+});
+  
+DOMSelectors.Duck.addEventListener("click", function () {
+    removeEverything();
+    insertDuck();
+});
+  
+DOMSelectors.Seafood.addEventListener("click", function () {
+    removeEverything();
+    insertSeafood();
+});
+   
+DOMSelectors.Noodles.addEventListener("click", function () {
+    removeEverything();
+    insertNoodles();
+})
+
+DOMSelectors.Vegetarian.addEventListener("click", function () {
+    removeEverything();
+    insertVegetarian();
+});
+          
+DOMSelectors.Rice.addEventListener("click", function () {
+    removeEverything();
+    insertRice();
+});
+
+DOMSelectors.Soup.addEventListener("click", function () {
+    removeEverything();
+    insertSoup();
+});
+
+  
+document.querySelector("#mode-button").addEventListener("click", function () {
+    if (document.body.classList.contains("light")) {
+    document.body.classList.add("dark");
+    document.body.classList.remove("light");
+    }
+    else {
+    document.body.classList.add("light");
+    document.body.classList.remove("dark");
+}
+});
+insertAll();
+
 
 
 
@@ -32,4 +100,4 @@ console.log(menu, name);
 //   </div>
 // `
 
-// setupCounter(document.querySelector('#counter'))
+// setupCounter(document.querySelector('#counter')
