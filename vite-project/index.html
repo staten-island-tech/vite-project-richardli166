@@ -1,41 +1,46 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Chinese Food Menu</title>
+
   </head>
-<body>
 
-    <h1 id="title">Menu</h1>
+  <body class="light">
+    <div class="mode" id="light">
+      <div class="top">
+        <div class="page-title">
+          <h1>Chinese Food Menu</h1>
+        </div>
+        <div class="foodButtons">
+          <input type="button" value="All" id="all-button"><br>
+          <input type="button" value="Appetizer" id="appetizer-button">
+          <input type="button" value="Chicken" id="chicken-button">
+          <input type="button" value="Beef" id="beef-button">
+          <input type="button" value="Pork" id="pork-button">
+          <input type="button" value="Duck" id="duck-button">
+          <input type="button" value="Seafood" id="seafood-button">
+          <input type="button" value="Noodles" id="noodles-button">
+          <input type="button" value="Vegetarian" id="vegetarian-button">
+          <input type="button" value="Rice" id="rice-button">
+          <input type="button" value="Soup" id="soup-button">
 
-    <div class="buttons">
-      <input type="submit" value="Appetizer" id="appetizer">
-      <input type="submit" value="Chicken" id="chicken">
-      <input type="submit" value="Beef" id="beef">
-      <input type="submit" value="Shrimp" id="shrimp">
-      <input type="submit" value="Seafood" id="Seafood">
-      <input type="submit" value="Noodles" id="noodles">
-      <input type="submit" value="Pork" id="pork">
-      <input type="submit" value="Veggie" id="veggie">
-      
-      <input type="submit" value="Dumplings" id="dumplings">
-      <input type="submit" value="Rice" id="rice">
-      
-      <input type="submit" value="Duck" id="duck">
-      
-      <input type="submit" value="Soup" id="soup">
-      
-      <input type="submit" value="Tofu" id="tofu">
-
+        </div>
+        <div class="mode-buttons">
+          <input type="button" value="Mode" id="mode-button">
+        </div>
+      </div>
+      <div class="allCards">
+      </div>
     </div>
-
-    <div id="carddisplay">
-    </div>
-
-</body>
-</html>
     <script type="module" src="js/main.js"></script>
   </body>
+
+    <script type="module" src="js/main.js"></script>
+
+  </body>
+
 </html>
