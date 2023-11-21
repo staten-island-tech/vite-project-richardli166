@@ -166,7 +166,6 @@ body {
   background-color: var(--secondary);
   font-size: var(--h3);
   border-radius: 30px;
-  font-family: 'Noto Sans', sans-serif;
   margin: 5px;
   width: 33%;
   padding: 10px;
@@ -186,7 +185,6 @@ body {
   background-color: var(--secondary);
   font-size: var(--h4);
   border-radius: 30px;
-  font-family: 'Rubik', sans-serif;
   padding: 5px;
   margin: 1px;
   align-items: center;
@@ -220,7 +218,6 @@ body {
   background-color: var(--secondary);
   font-size: var(--h3);
   border: 30px;
-  font-family: 'Rubik', sans-serif;
   padding: 5px;
   border-radius: 30px;
   --text: var(--white);
@@ -228,7 +225,6 @@ body {
 
 .page-title {
   font-size: var(--h1);
-  font-family: 'Agbalumo', serif;
   text-align: center;
 }
 
@@ -253,13 +249,10 @@ body {
 
 .card-title {
   font-size: var(--h2);
-  text-transform: uppercase;
-  font-family: 'Noto Sans', sans-serif;
 }
 
 .card-description {
   font-size: var(--h4);
-  font-family: 'Rubik', serif;
 }
 
 .card-img {
