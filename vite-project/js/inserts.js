@@ -1,7 +1,6 @@
 import {chinesefoodmenu} from "./menu";
 import {DOMSelectors} from './dom';
 
-
 function insertAll() {
     chinesefoodmenu.forEach((food) => DOMSelectors.allCards.insertAdjacentHTML("beforeend",
     `<div class="card" id="all">
@@ -14,7 +13,7 @@ function insertAll() {
     );
   }
   
-  function insertAppetizer() {
+  function insert(chinesefoodmenu) {
     const filtered = chinesefoodmenu.filter((food) => food.type.includes("Appetizer"));
     filtered.forEach((food) => DOMSelectors.allCards.insertAdjacentHTML("beforeend", 
     `<div class="card" id="appetizer">
@@ -157,7 +156,6 @@ function insertSoup() {
     const rice = document.querySelectorAll("#rice");
     const soup = document.querySelectorAll("#soup");
     all.forEach((food) => food.remove());
-    all.forEach((food) => food.remove());
     appetizer.forEach((food) => food.remove());
     chicken.forEach((food) => food.remove());
     beef.forEach((food) => food.remove());
@@ -171,4 +169,4 @@ function insertSoup() {
     soup.forEach((food) => food.remove());
   }
 
-export {insertAll, insertAppetizer, insertChicken, insertBeef, insertPork, insertDuck, insertSeafood, insertNoodles, insertVegetarian, insertRice, insertSoup, removeEverything};
+export {insert};

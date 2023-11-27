@@ -1,6 +1,6 @@
 import "../css/style.css";
 import {DOMSelectors} from './dom';
-import {insertAll, insertAppetizer, insertChicken, insertBeef, insertPork, insertDuck, insertSeafood, insertNoodles, insertVegetarian, insertRice, insertSoup, removeEverything} from "./inserts";
+import {insert} from "./inserts";
 
 DOMSelectors.all.addEventListener("click", function () {
     removeEverything();
@@ -16,7 +16,7 @@ DOMSelectors.Chicken.addEventListener("click", function () {
     removeEverything();
     insertChicken();
   });
-  
+
 DOMSelectors.Beef.addEventListener("click", function () {
     removeEverything();
     insertBeef();
@@ -68,7 +68,7 @@ document.querySelector("#mode-button").addEventListener("click", function () {
     document.body.classList.remove("dark");
 }
 });
-insertAll();
+insert();
 
 
 

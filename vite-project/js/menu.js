@@ -182,4 +182,4 @@ const chinesefoodmenu = [
      imageSrc: "../Fried-Wontons.jpg"
    }
  ];
- export {chinesefoodmenu};
+ export {chinesefoodmenu}; 
