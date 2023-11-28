@@ -1,60 +1,71 @@
 import "../css/style.css";
 import {DOMSelectors} from './dom';
-import {insert} from "./inserts";
+import {chinesefoodmenu} from "./menu";
+import {inserts} from "./inserts"
 
 DOMSelectors.all.addEventListener("click", function () {
-    removeEverything();
-    insertAll();
+    DOMSelectors.box.innerHTML = "";
+    inserts(menu);
   });
   
 DOMSelectors.Appetizer.addEventListener("click", function () {
-    removeEverything();
-    insertAppetizer();
+    DOMSelectors.allCards.innerHTML = "";
+    const appetizer = chinesefoodmenu.filter((item) => item.type.includes("appetizer"));
+    inserts(appetizer);
   });
-  
+
 DOMSelectors.Chicken.addEventListener("click", function () {
-    removeEverything();
-    insertChicken();
+    DOMSelectors.allCards.innerHTML = "";
+    const chicken = chinesefoodmenu.filter((item) => item.type.includes("chicken"));
+    inserts(chicken);
   });
 
 DOMSelectors.Beef.addEventListener("click", function () {
-    removeEverything();
-    insertBeef();
+    DOMSelectors.allCards.innerHTML = "";
+    const beef = chinesefoodmenu.filter((item) => item.type.includes("beef"));
+    inserts(beef);
 });
   
 DOMSelectors.Pork.addEventListener("click", function () {
-    removeEverything();
-    insertPork();
+    DOMSelectors.allCards.innerHTML = "";
+    const pork = chinesefoodmenu.filter((item) => item.type.includes("pork"));
+    inserts(pork);
 });
   
 DOMSelectors.Duck.addEventListener("click", function () {
-    removeEverything();
-    insertDuck();
+    DOMSelectors.allCards.innerHTML = "";
+    const duck = chinesefoodmenu.filter((item) => item.type.includes("duck"));
+    inserts(duck);
 });
   
 DOMSelectors.Seafood.addEventListener("click", function () {
-    removeEverything();
-    insertSeafood();
+    DOMSelectors.allCards.innerHTML = "";
+    const seafood = chinesefoodmenu.filter((item) => item.type.includes("seafood"));
+    inserts(seafood);
 });
    
 DOMSelectors.Noodles.addEventListener("click", function () {
-    removeEverything();
-    insertNoodles();
+    DOMSelectors.allCards.innerHTML = "";
+    const noodles = chinesefoodmenu.filter((item) => item.type.includes("noodles"));
+    inserts(noodles);
 })
 
 DOMSelectors.Vegetarian.addEventListener("click", function () {
-    removeEverything();
-    insertVegetarian();
+    DOMSelectors.allCards.innerHTML = "";
+    const vegetarian = chinesefoodmenu.filter((item) => item.type.includes("vegetarian"));
+    inserts(vegetarian);
 });
           
 DOMSelectors.Rice.addEventListener("click", function () {
-    removeEverything();
-    insertRice();
+    DOMSelectors.allCards.innerHTML = "";
+    const rice = chinesefoodmenu.filter((item) => item.type.includes("rice"));
+    inserts(rice);
 });
 
 DOMSelectors.Soup.addEventListener("click", function () {
-    removeEverything();
-    insertSoup();
+    DOMSelectors.allCards.innerHTML = "";
+    const soup = chinesefoodmenu.filter((item) => item.type.includes("soup"));
+    inserts(soup);
 });
 
   
@@ -68,7 +79,7 @@ document.querySelector("#mode-button").addEventListener("click", function () {
     document.body.classList.remove("dark");
 }
 });
-insert();
+inserts(chinesefoodmenu);
 
 
 
