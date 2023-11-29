@@ -3,7 +3,17 @@ import {DOMSelectors} from './dom';
 import {chinesefoodmenu} from "./menu";
 import {inserts} from "./inserts"
 
-let buttons = document.querySelectorAll("")
+let buttons = document.querySelectorAll(".typeButtons")
+buttons.forEach((button) => button.addEventListener("click",
+function(){
+    if (button == buttons[0]){
+    let filter = button.textContent;
+    chinesefoodmenu.filter((chinesefoodmenu) => chinesefoodmenu.type.includes(filter)).forEach((chinesefoodmenu) => inserts(chinesefoodmenu));
+        DOMSelectors.allCards.innerHTML = "";
+        inserts(chinesefoodmenu);
+    };
+}
+));
 
 
 
@@ -13,11 +23,7 @@ let buttons = document.querySelectorAll("")
 
 
 
-
-
-
-
-
+/* 
 DOMSelectors.all.addEventListener("click", function () {
     DOMSelectors.allCards.innerHTML = "";
     inserts(chinesefoodmenu);
@@ -82,7 +88,7 @@ DOMSelectors.Soup.addEventListener("click", function () {
     const soup = chinesefoodmenu.filter((item) => item.type.includes("Soup"));
     inserts(soup);
 });
-
+ */
   
 document.querySelector("#mode-button").addEventListener("click", function () {
     if (document.body.classList.contains("light")) {
@@ -94,11 +100,7 @@ document.querySelector("#mode-button").addEventListener("click", function () {
     document.body.classList.remove("dark");
 }
 });
-inserts(chinesefoodmenu);
-
-
-
-
+//inserts(chinesefoodmenu);
 
 
 
