@@ -7,18 +7,17 @@ let buttons = document.querySelectorAll(".typeButtons")
 buttons.forEach((button) => button.addEventListener("click",
 function(){
     if (button == buttons[0]){
-    let filter = button.textContent;
-    chinesefoodmenu.filter((chinesefoodmenu) => chinesefoodmenu.type.includes(filter)).forEach((chinesefoodmenu) => inserts(chinesefoodmenu));
         DOMSelectors.allCards.innerHTML = "";
         inserts(chinesefoodmenu);
+    }else{
+        let filter = typeButtons.textContent;
+        let filteredchinesefoodmenu = chinesefoodmenu.filter((chinesefoodmenu) => chinesefoodmenu.type.includes(filter));
+        DOMSelectors.allCards.innerHTML = "";
+        inserts(filteredchinesefoodmenu);
     };
-}
-));
+}));
 
-
-
-
-
+inserts(chinesefoodmenu);
 
 
 
