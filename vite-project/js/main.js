@@ -1,18 +1,15 @@
 import "../css/style.css";
-import {DOMSelectors} from './dom';
 import {chinesefoodmenu} from "./menu";
 import {inserts} from "./inserts"
 
-let buttons = document.querySelectorAll(".typeButtons")
+let buttons = document.querySelectorAll(".typebutton")
 buttons.forEach((button) => button.addEventListener("click",
 function(){
     if (button == buttons[0]){
-        DOMSelectors.allCards.innerHTML = "";
         inserts(chinesefoodmenu);
-    }else{
-        let filter = typeButtons.textContent;
-        let filteredchinesefoodmenu = chinesefoodmenu.filter((chinesefoodmenu) => chinesefoodmenu.type.includes(filter));
-        DOMSelectors.allCards.innerHTML = "";
+    } else {
+        let filter = button.textContent;
+        let filteredchinesefoodmenu = chinesefoodmenu.filter((food) => food.type.includes(filter));
         inserts(filteredchinesefoodmenu);
     };
 }));
